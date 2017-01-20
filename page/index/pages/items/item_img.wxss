@@ -1,0 +1,14 @@
+.img_card {
+  margin-left: 4rpx;
+  margin-right: 4rpx;
+  padding: 2rpx;
+  background: #fff;
+  border: 1rpx solid #eee;
+  border-radius:8rpx;
+  box-shadow: 5rpx 5rpx 5rpx #eee;
+  margin-top: 8rpx;
+}
+
+.img_card image {
+  width: 100%;
+}

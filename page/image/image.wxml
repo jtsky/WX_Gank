@@ -1,0 +1,4 @@
+<view style="height:{{windowHeight}}px;" class="img">
+<image  src="{{url}}" mode="widthFix"/>
+<!--<image  src="{{url}}" mode="widthFix" bindlongtap="saveImg"/>-->
+</view>

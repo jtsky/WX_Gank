@@ -1,0 +1,8 @@
+<import src="../items/item_common.wxml" />
+<template name="cloumn_common">
+  <view class="common_column">
+    <block wx:for="{{item_column}}" wx:key="index">
+      <template is="item_common" data="{{item}}" />
+    </block>
+  </view>
+</template>

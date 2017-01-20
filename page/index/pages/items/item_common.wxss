@@ -1,0 +1,24 @@
+.common_card {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: flex-start;
+  margin-left: 8rpx;
+  margin-right: 8rpx;
+  padding: 20rpx;
+  background: #fff;
+  border: 1rpx solid #eee;
+  border-radius:8rpx;
+  box-shadow: 5rpx  5rpx 5rpx 5rpx #eee;
+  margin-top: 15rpx;
+  word-break: break-all;
+}
+
+.common_card .text_style{
+  margin-bottom: 20rpx;
+}
+.common_card .name{
+  color: #1ACC85;
+  font-size: 25px;
+}
+

@@ -1,0 +1,29 @@
+.common-box {
+  display: block;
+  height: 100%;
+}
+
+.common-box .common-box-wrap {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.common-box .-box-wrap .image-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.common-box .common-box-wrap .loadmore {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 80rpx;
+  margin-top: 10rpx;
+}
+
+/*引入组件样式*/
+@import "column/column_common.wxss";

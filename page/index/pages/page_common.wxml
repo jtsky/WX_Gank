@@ -1,0 +1,33 @@
+<import src="column/column_common.wxml" />
+<template name="common">
+  <scroll-view class="common-box" scroll-top="{{page == 1 ? scrolllview.common_top1 : (page == 2 ? scrolllview.common_top2 : scrolllview.common_top3)}}" scroll-y="true" lower-threshold="20" bindscrolltolower="loadMore" data-type="moreCommon" data-index="{{page}}"
+  bindscroll="scrolling">
+    <view class="common-box-wrap">
+      <view class="common-container">
+        <block wx:if="{{android_columns}}">
+          <block wx:for="{{android_columns}}" wx:for-item="item_column" wx:key="index">
+            <template is="cloumn_common" data="{{item_column}}" />
+          </block>
+        </block>
+        <block wx:elif="{{ios_columns}}">
+          <block wx:for="{{ios_columns}}" wx:for-item="item_column" wx:key="index">
+            <template is="cloumn_common" data="{{item_column}}" />
+          </block>
+        </block>
+        <block wx:elif="{{all_columns}}">
+          <block wx:for="{{all_columns}}" wx:for-item="item_column" wx:key="index">
+            <template is="cloumn_common" data="{{item_column}}" />
+          </block>
+        </block>
+      </view>
+      <view class="loadmore" >
+        <image wx:if="{{isLoading}}" style=" height: 30px; width:60px;
+   src="../static/loading.gif" 
+   mode="aspectFit "
+   />
+     <text wx:else>没有更多了</text>
+      </view>
+      
+  </view>
+  </scroll-view>
+</template>

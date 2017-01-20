@@ -1,0 +1,9 @@
+.common_column {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background: #fff;
+    flex-direction: column;
+  }
+  /*引入组件样式*/
+@import "../items/item_common.wxss";

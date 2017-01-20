@@ -1,0 +1,22 @@
+<import src="column/column_img.wxml" />
+<template name="img">
+  <scroll-view class="img-box" scroll-top="{{scrolllview.img_top}}" scroll-y="true" lower-threshold="20" bindscrolltolower="loadMore" data-type="moreImg" bindscroll="scrolling">
+    <view class="img-box-wrap">
+      <view class="image-container">
+        <block wx:for="{{image_columns}}" wx:for-item="item_column" wx:key="index">
+          <template is="cloumn_img" data="{{item_column}}" />
+        </block>
+      </view>
+      <view class="loadmore">
+        <image  wx:if="{{isLoading}}" style=" height: 30px; width:60px;
+   src="../static/loading.gif" 
+   mode="aspectFit "
+   />
+      
+      <text wx:else>没有更多了</text>
+      
+      </view>
+      
+  </view>
+  </scroll-view>
+</template>

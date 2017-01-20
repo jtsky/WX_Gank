@@ -1,0 +1,8 @@
+<template name="item_common">
+  <view class="common_card">
+  <text class="name text_style">{{item.who}}</text>
+  <text class="text_style">发布时间：{{item.publishedAt}}</text>
+  <text class="text_style">描述：{{item.desc}}<br/></text>
+  <text>地址：{{item.url}}</text>
+  </view>
+</template>

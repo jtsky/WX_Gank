@@ -1,0 +1,8 @@
+<import src="../items/item_img.wxml" />
+<template name="cloumn_img">
+  <view class="img_column">
+    <block wx:for="{{item_column}}" wx:key="index">
+      <template is="item_img" data="{{item}}" />
+    </block>
+  </view>
+</template>

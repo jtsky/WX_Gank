@@ -1,0 +1,14 @@
+/* pages/image/image.wxss */
+
+.img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:rgba(0,0,0,0.2);
+    padding: 10rpx;
+}
+
+.img image{
+    width: 100%;
+}

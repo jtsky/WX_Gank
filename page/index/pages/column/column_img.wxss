@@ -1,0 +1,9 @@
+.img_column {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    background: #fff;
+    flex-direction: column;
+  }
+  /*引入组件样式*/
+@import "../items/item_img.wxss";

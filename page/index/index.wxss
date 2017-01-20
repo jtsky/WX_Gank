@@ -1,0 +1,97 @@
+.stv-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.withAnimate {
+  transition: all 100ms ease;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  -moz-perspective: 1000;
+  -ms-perspective: 1000;
+  perspective: 1000;
+}
+
+.stv-container .tab-bar {
+  position: relative;
+  display: flex;
+  font-size: 30rpx;
+  color: #666;
+}
+
+.stv-container .tab-bar .tab-active {
+  color: #1acc85;
+}
+
+.stv-container .tab-bar .tab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 16rpx;
+  padding-bottom: 20rpx;
+}
+
+.stv-container .tab-bar .under-line {
+  position: absolute;
+  bottom: 0;
+  height: 6rpx;
+  background-color: #1acc85;
+}
+
+.stv-container .scroll-view {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+}
+
+.stv-container .scroll-view .scroll-view-wrapper {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  display: flex;
+}
+
+.stv-container .scroll-view .scroll-view-wrapper .one-scene {
+  height: 100%;
+}
+
+.stv-container .com-widget-goTop {
+  position: fixed;
+  bottom: 100px;
+  right: 10px;
+  background: rgba(0, 0, 0, 0.45);
+  border-radius: 50%;
+  overflow: hidden;
+  z-index: 500;
+}
+
+/*http://blog.csdn.net/qq_24147051/article/details/54233644*/
+.stv-container
+.com-widget-goTop .icon-gotop {
+  background-color: rgba(0, 0, 0, 0.8);
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  line-height: 68px;
+  font-size: 12px;
+  color: #fff;
+  text-align: center;
+  border-radius: 50%;
+  background: url("http://m.dev.vd.cn/static/xcx/v1/goo/w_2-3451cc437e.png") no-repeat center -1110px;
+  background-size: 50px auto;
+}
+
+/*引入组件样式*/
+@import "pages/page_common.wxss";
+@import "pages/page_img.wxss";
